@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White2"
+    tools:context=".ui.maps.MapsFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="593dp"
+            android:layout_height="1010dp"
+            android:src="@drawable/img_0"
+            android:translationZ="-1dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            tools:layout_editor_absoluteX="-15dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Mis Viajes"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:id="@+id/materialCardView"
+                android:layout_width="357dp"
+                android:layout_height="99dp"
+                android:layout_marginTop="440dp"
+                android:background="@drawable/apphome"
+                android:backgroundTint="#FFFFFF"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_notifications_black_24dp"
+                    android:translationX="24dp"
+                    android:translationY="30dp" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="232dp"
+                    android:layout_height="74dp"
+                    android:text="Conductor.
+                                    Empresa: SENA
+                                    Cant. Pasajeros: 3"
+
+                    android:translationX="100dp"
+                    android:translationY="10dp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:id="@+id/materialCardView2"
+                android:layout_width="354dp"
+                android:layout_height="91dp"
+                android:layout_marginTop="16dp"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_notifications_black_24dp"
+                    android:translationX="24dp"
+                    android:translationY="30dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="169dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pasajero.
+                                    Empresa: SENA
+                                    Conductor: Andrés Henao"
+                    android:translationX="100dp"
+                    android:translationY="10dp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="192dp"
+            android:text="Has disminuido"
+            android:textColor="@color/verdeagua"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFecha" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="45L de C02"
+            android:textColor="@color/verdeagua"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="184dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Tus puntos"
+            android:textColor="@color/verdeagua"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvClima" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="205dp"
+                android:layout_height="59dp"
+                android:src="@drawable/bg_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.597"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="-2dp" />
+
+            <TextView
+            android:id="@+id/tvPuntos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="44dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="1350"
+            android:textColor="@color/verdeagua"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="293dp"
+                android:layout_height="294dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/ic_loginlogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvFecha"
+                android:layout_width="134dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="76dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="16/10/2020"
+                android:textColor="@color/verdeagua"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvClima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="26°"
+                android:textColor="@color/verdeagua"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Clima"
+                android:textColor="@color/verdeagua"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="72dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="44dp"
+                android:text="Fecha"
+                android:textColor="@color/verdeagua"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="124dp"
+                android:text="Ver mas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView2"
+                app:rippleColor="@color/verdeagua" />
+
+            <Button
+                android:id="@+id/btnViaje1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="362dp"
+                android:layout_height="107dp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="432dp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="63dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="12dp"
+                android:text="Way"
+                android:textColor="@color/Primary"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView30"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="96dp"
+                android:text="Movility"
+                android:textColor="@color/Secundary"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnViajeCrear"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="353dp"
+                android:layout_height="94dp"
+                tools:layout_editor_absoluteX="27dp"
+                tools:layout_editor_absoluteY="557dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
